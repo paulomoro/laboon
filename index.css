@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-size: 16px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 15vh;
+    align-content: center;
+}
+
+header .logo{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    margin-left: 100px;
+}
+
+.logo img{
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.logo h2{
+    font-family: 'Poppins', sans-serif;
+    color: #598cf4;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.nav{
+    display: grid;
+    padding-top: 18px;
+    justify-content: end;
+    margin-right: 50px;
+    grid-template-columns:repeat(4,120px) ;
+}
+
+.nav a{
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 1.3rem;
+    color: #b5a1d3;
+}
+
+.nav a:hover,  .nav .active{
+    color: #598cf4;
+}
+
+.showcase{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-left: 100px;
+    height: 85vh;
+}
+
+.left__area h1{
+    margin-top: 50px;
+    font-size: 3.2rem;
+    color: #0e0235;
+    line-height: 3.8rem;
+    text-transform: capitalize;
+}
+
+.left__area p{
+    margin-top: 30px;
+    color: #b5a1d3;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.left__area .btn{
+    margin: 50px 0 0 10px;
+    text-align: center;
+    padding-left: 25px;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #3a3be2,#7da6f8);
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    box-shadow:  5px 10px 20px 1px #a4a4ec;
+    position: relative;
+}
+
+.btn:hover{
+    font-size: 1.25rem;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.btn .btn__dot{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    border-radius: 100%;
+    top: 16px;
+    left: 30px;
+}
+ .btn .btn__dot::before{
+    content: url(./images/play.svg);
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+}
+
+.right__area img{
+    height: 500px;
+    margin-left: 100px;
+}
+
+#baloon{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: linear-gradient(to right, #9e9eee,#c4d7ff);
+    position: absolute;
+    left: 40%;
+    top: -60px;
+}
+
+#baloon2{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+   /* border-top-right-radius: 100%;
+   border-top-left-radius: 100%; */
+    background: linear-gradient(to right, #ee94a0,#e0e3eb);
+    position: absolute;
+    left: -70px;
+    top: 73vh;
+    transform: rotate(45deg);
+}
